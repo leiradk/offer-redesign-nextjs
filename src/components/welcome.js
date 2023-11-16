@@ -2,7 +2,9 @@ import Image from 'next/image'
 import someImage from '../images/sample.png'
 
 export function Welcome() {
-  return <div className='flex relative z-0'>
+  return (
+        <>
+        <div className='flex relative z-0'>
             <div className='absolute z-10 w-80 h-80 bg-blue-600 rounded-full left-0 -top-80 blur-3xl'>Absulote</div>
                 <Image src={someImage} alt="Some text" className='relative z-20' />
             <div className='flex gap-1 flex-col gap-10 relative z-20'>
@@ -18,4 +20,6 @@ export function Welcome() {
                 </div>
             </div>  
         </div>
+        </>
+    ) 
 }
