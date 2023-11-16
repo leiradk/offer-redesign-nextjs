@@ -1,10 +1,9 @@
-import Image from 'next/image'
-import someImage from '../images/sample.png'
+import { Welcome } from '@/component/welcome'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Image src={someImage} alt="Some text" />
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-slate-900">
+      <Welcome />
     </main>
   )
 }
